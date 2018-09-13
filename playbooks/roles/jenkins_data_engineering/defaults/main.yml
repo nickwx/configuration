@@ -17,10 +17,10 @@ JENKINS_VOLUMES: []
 
 analytics_jenkins_seed_name: 'data_engineering_seed_job'
 analytics_jenkins_seed_path: '{{ jenkins_common_config_path }}/xml/seed_job.xml'
-analytics_jenkins_seed_job_source: '{{ role_path }}/../jenkins_analytics/files/xml/seed_job.xml'
+analytics_jenkins_seed_job_source: '{{ role_path }}/../jenkins_data_engineering/files/xml/seed_job.xml'
 
-analytics_jenkins_user_uid: 1002
-analytics_jenkins_group_gid: 1004
+analytics_jenkins_user_uid: 1010
+analytics_jenkins_group_gid: 1010
 analytics_jenkins_version: jenkins_2.89.4
 analytics_jenkins_jvm_args: '-Djava.awt.headless=true -Xmx16g -Djenkins.install.runSetupWizard=false'
 
